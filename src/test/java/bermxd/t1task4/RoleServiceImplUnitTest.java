@@ -1,7 +1,7 @@
 package bermxd.t1task4;
 
-import bermxd.t1task4.customException.RoleServiceException;
 import bermxd.t1task4.dto.RolesDto;
+import bermxd.t1task4.exception.RoleServiceException;
 import bermxd.t1task4.service.impl.RoleServiceImpl;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.jupiter.api.Test;

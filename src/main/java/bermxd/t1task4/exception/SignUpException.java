@@ -1,7 +1,6 @@
-package bermxd.t1task4.customException;
+package bermxd.t1task4.exception;
 
 public class SignUpException extends RuntimeException {
-
     public SignUpException(String message) {
         super(message);
     }

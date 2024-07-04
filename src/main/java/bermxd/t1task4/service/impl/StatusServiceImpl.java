@@ -1,6 +1,6 @@
 package bermxd.t1task4.service.impl;
 
-import bermxd.t1task4.customException.StatusFailedException;
+import bermxd.t1task4.exception.StatusFailedException;
 import bermxd.t1task4.dto.StatusDto;
 import bermxd.t1task4.service.CodeService;
 import bermxd.t1task4.service.StatusService;
@@ -17,10 +17,8 @@ import java.util.Base64;
 @Service
 @RequiredArgsConstructor
 public class StatusServiceImpl implements StatusService {
-
     private final RestTemplate restTemplate;
     private final CodeService codeService;
-
     @Value("${default.url}")
     private String url;
     @Value("${default.status:increased}")
@@ -47,5 +45,4 @@ public class StatusServiceImpl implements StatusService {
         statusDto.setStatus(status);
         return statusDto;
     }
-
 }

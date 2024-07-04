@@ -7,7 +7,7 @@ import org.springframework.http.MediaType;
 
 @UtilityClass
 public class HttpUtils {
-    public static HttpEntity<?> createHttpEntity(Object request){
+    public static HttpEntity<?> createHttpEntity(Object request) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         return new HttpEntity<>(request, headers);

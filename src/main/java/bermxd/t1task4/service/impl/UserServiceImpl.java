@@ -13,7 +13,6 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class UserServiceImpl implements UserService {
-
     private final RoleService roleService;
     private final SignUpService signUpService;
     private final StatusService statusService;

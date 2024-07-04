@@ -11,6 +11,6 @@ public class TestUtils {
     }
 
     public static int randomInt() {
-        return (int) (Math.random()*10);
+        return (int) (Math.random() * 10);
     }
 }

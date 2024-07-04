@@ -1,8 +1,7 @@
 package bermxd.t1task4.service.impl;
 
-import bermxd.t1task4.customException.SignUpException;
+import bermxd.t1task4.exception.SignUpException;
 import bermxd.t1task4.dto.UserStatusDto;
-import bermxd.t1task4.service.RoleService;
 import bermxd.t1task4.service.SignUpService;
 import bermxd.t1task4.util.HttpUtils;
 import lombok.RequiredArgsConstructor;
@@ -18,7 +17,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class SignUpServiceImpl implements SignUpService {
     private final RestTemplate restTemplate;
-    private final RoleService roleService;
     @Value("${default.url}")
     private String url;
 

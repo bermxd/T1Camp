@@ -1,6 +1,6 @@
 package bermxd.t1task4.service.impl;
 
-import bermxd.t1task4.customException.CodeException;
+import bermxd.t1task4.exception.CodeException;
 import bermxd.t1task4.service.CodeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,7 +13,6 @@ import org.springframework.web.client.RestTemplate;
 @RequiredArgsConstructor
 public class CodeServiceImpl implements CodeService {
     private final RestTemplate restTemplate;
-
     @Value("${default.url}")
     private String url;
 

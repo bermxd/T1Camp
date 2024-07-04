@@ -14,8 +14,6 @@ import javax.validation.Valid;
 @RestController
 @AllArgsConstructor
 public class UserControllerImpl implements UserController {
-
-
     private final UserService userService;
 
     @PutMapping("/status")

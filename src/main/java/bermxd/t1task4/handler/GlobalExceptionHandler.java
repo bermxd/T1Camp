@@ -1,5 +1,9 @@
-package bermxd.t1task4.customException;
+package bermxd.t1task4.handler;
 
+import bermxd.t1task4.exception.CodeException;
+import bermxd.t1task4.exception.RoleServiceException;
+import bermxd.t1task4.exception.SignUpException;
+import bermxd.t1task4.exception.StatusFailedException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
